@@ -1,0 +1,626 @@
+@font-face {
+    font-family: Sour ;
+    src: url(fonts/SourGummy-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: NerkoOne;
+    src: url(fonts/NerkoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(fonts/Nunito-VariableFont_wght.ttf);
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 20px;
+}
+
+body {
+    background-color: #dac1cf;
+}
+
+h1, h2, h3, .nav-btn {
+    font-weight: bold;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #7c4cbb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+}
+
+.logo-common {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 100px;
+    background-color: #7c4cbb;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding: 20px;
+}
+.footer-content .contact p {
+    color: white;
+}
+
+.footer-content h3 {
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 10px;
+
+}
+
+
+.nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.nav-btn {
+    background-color: #9f86c0;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, filter 0.3s;
+    border-radius: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+    background-color: #7b2ae6;
+    transform: scale(1.3);
+    box-shadow: 0 4px 6px #dac1cf;
+}
+
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 8%;
+    right: 1%;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Přidání plynulého přechodu */
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.2); /* Zvětšení na 120% */
+}
+
+.scroll-to-top img {
+    height: 50px;
+    width: 35px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: separate; /* Změna na separate pro správné zaoblení */
+    border-spacing: 0; /* Zajištění, že není mezera mezi buňkami */
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px; /* Zakulacení tabulky */
+    overflow: hidden; /* Skrytí okrajů, které přesahují */
+}
+table h3 {
+    font-size: 30px;
+    color: white;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #6623be;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.highlight {
+    background-color: #9f86c0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin: 1% auto;
+    max-width: 90%;
+}
+
+.map-container {
+    width: 45%;
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1, .container2 {
+    width: 60%;
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 10px; /* Změna z 2% na 10px pro ostřejší zakulacení */
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 0 auto; /* Přidání zarovnání na střed */
+    margin-bottom: 3%;
+}
+
+.container1 h2, .container2 h2 {
+    margin-bottom: 1%;
+}
+
+.container1 p, .container2 p {
+    font-size: 110%;
+    line-height: 1.6;
+    margin-bottom: 2%;
+}
+
+.container2 .list ul {
+    padding-left: 5%;
+    list-style-type: disc;
+}
+
+.container2 .list ul li {
+    margin-bottom: 1.5%;
+    font-size: 110%;
+    max-width: 200%;
+}
+
+.container1 .nav, .container2 .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.pics {
+    padding: 20px;
+    text-align: center;
+}
+
+.pics img{
+    justify-content: center;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+.pics img:hover {
+    transform: scale(1.1);
+}
+
+        /* Lightbox stylování */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            transition: color 0.3s;
+        }
+
+        .close-lightbox:hover {
+            color: #ff6f61;
+        }
+
+
+
+.list {
+    text-align: left;
+    display: inline-block;
+}
+
+.info {
+    width: 100%; /* Nastaví šířku kontejnerů na 100% šířky rodiče */
+    max-width: 600px; /* Maximální šířka 600px */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Zajistí zarovnání na střed pomocí margin auto */
+}
+
+.info h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.info img {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    border: 0;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 8%;
+    right: 5%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25%;
+    padding: 1%;
+
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden; /* Zabrání posouvání */
+}
+body.menu-active {
+    overflow: hidden; /* Skrytí posuvníku */
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #7b2ae6;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-menu:hover {
+    color: #7b2ae6;
+}
+
+#Cenik {
+    display: none;
+}
+
+#TMRus {
+    display: none;
+}
+
+.form-container {
+    display: flex; /* Použití flexboxu */
+    flex-direction: column; /* Uložení prvků do sloupce */
+    align-items: center; /* Horizontální zarovnání na střed */
+    justify-content: center; /* Vertikální zarovnání na střed, pokud je to možné */
+    width: 60%; /* Můžete upravit podle potřeby */
+    max-width: 600px; /* Maximální šířka pro formulář */
+    margin: 20px auto; /* Zarovnání na střed */
+    padding: 20px;
+    background-color: #fff; /* Pozadí formuláře */
+    border-radius: 10px; /* Zaoblení rohů */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Stínování */
+}
+
+button {
+    background-color: #9f86c0; /* Barva tlačítka */
+    border: none; /* Bez okraje */
+    color: white; /* Barva textu */
+    padding: 10px 20px; /* Vnitřní okraje */
+    text-align: center; /* Zarovnání textu */
+    text-decoration: none; /* Bez podtržení */
+    display: inline-block; /* Inline blok pro stylizaci */
+    font-size: 20px; /* Velikost písma */
+    cursor: pointer; /* Změna kurzoru na ruku */
+    transition: background-color 0.3s, transform 0.3s; /* Přechody pro hover efekty */
+    border-radius: 20px; /* Zaoblení rohů */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Stínování */
+}
+
+
+
+.form-container label {
+    font-size: 1.2rem; /* Velikost písma pro labely */
+    margin-bottom: 10px; /* Mezery pod labely */
+    display: block; /* Zobrazení jako blok pro vertikální uspořádání */
+}
+
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%; /* Šířka na 100% */
+    padding: 10px; /* Vnitřní padding pro lepší vzhled */
+    margin-bottom: 20px; /* Mezery pod inputy a textarea */
+    border: 1px solid #ddd; /* Okraj */
+    border-radius: 5px; /* Zakulacení rohů */
+    font-size: 1rem; /* Velikost písma */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Vnitřní stín pro efekt */
+}
+
+.form-container input[type="email"]:focus,
+.form-container textarea:focus {
+    outline: none; /* Zrušení výchozího rámečku */
+    border-color: #7c4cbb; /* Změna barvy okraje na focus */
+    box-shadow: 0 0 5px rgba(124, 76, 187, 0.5); /* Vnější stín pro efekt */
+}
+
+.form-container textarea {
+    min-height: 150px; /* Minimální výška pro textarea */
+    resize: vertical; /* Umožnění vertikálního přetahování */
+}
+
+.form-container button {
+    width: 100%; /* Tlačítko na 100% šířku */
+    background-color: #7c4cbb; /* Barva pozadí tlačítka */
+    color: white; /* Barva textu */
+    padding: 15px; /* Vnitřní padding */
+    border: none; /* Bez okraje */
+    border-radius: 5px; /* Zakulacení rohů */
+    cursor: pointer; /* Ukazatel myši na rukou */
+    font-size: 1.2rem; /* Velikost písma */
+    transition: background-color 0.3s, transform 0.3s; /* Přechod pro hover efekt */
+    
+}
+
+.form-container button:hover {
+    background-color: #9f86c0; /* Změna barvy na hover */
+    transform: scale(1.05); /* Malé zvětšení na hover */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    * {
+        margin: 0 auto;
+    }
+    .nav {
+        display: none; /* Skrytí původní navigace */
+    }
+    .header {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 350%;
+        text-align: center;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu-icon {
+        display: block; /* Zobrazení ikony menu */
+    }
+
+    .container1, .container2 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 8%;
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+
+    }
+
+    .footer-content .contact {
+        display: flex;
+        flex-direction: column; /* Umožní vertikální zobrazení */
+    }
+
+    .footer-logo {
+        display: none;
+    }
+    
+    .nav-btn {
+        display: none; /* Odstraněno, pokud se nevyžaduje */
+    }
+
+    .header {
+        padding: 8%; /* Odstraněno, pokud se nevyžaduje */
+    }
+
+    #Cenik {
+        display: block;
+    }
+
+    #TMR {
+        display: none;
+    }
+
+    #TMRus {
+        display: block;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    th, td {
+        padding: 8px; /* Zmenšení paddingu pro menší obrazovky */
+        font-size: 14px; /* Zmenšení velikosti písma */
+    }
+
+    .form-container {
+        width: 90%; /* Šířka 90% pro menší obrazovky */
+    }
+    
+    .form-container h2 {
+        text-align: center; /* Vycentrování nadpisu */
+    }
+    
+    .form-container label {
+        font-size: 1rem; /* Velikost písma pro štítky */
+        margin-top: 10px; /* Odsazení nad štítky */
+    }
+    
+    .form-container input,
+    .form-container textarea {
+        width: calc(100% - 20px); /* Odsazení z každé strany */
+        padding: 10px; /* Odsazení uvnitř vstupů */
+        margin: 5px 0 15px; /* Odsazení mezi vstupy */
+        border: 1px solid #ccc; /* Světlý okraj */
+        border-radius: 5px; /* Zaoblené okraje */
+    }
+    
+    .form-container button {
+        width: 100%; /* Šířka 100% */
+        padding: 10px; /* Odsazení */
+        background-color: #7a4b8a; /* Barva tlačítka */
+        color: white; /* Barva textu */
+        border: none; /* Odstranění okraje */
+        border-radius: 5px; /* Zaoblené tlačítko */
+        font-size: 1rem; /* Velikost písma */
+        cursor: pointer; /* Ukazatel kurzoru */
+    }
+    
+    .form-container button:hover {
+        background-color: #6c3b7a; /* Tmavší odstín při najetí myší */
+    }
+
+    /* Zajištění, že obrázky v kontejnerech jsou responzivní */
+    .pics img {
+        width: 100%; /* Zajištění, že obrázky se přizpůsobí šířce kontejneru */
+        height: auto; /* U držení poměru stran */
+    }
+
+    /* Zajištění, že text v kontejnerech je čitelný */
+    .text-content {
+        font-size: 1rem; /* Velikost písma pro text */
+        line-height: 1.5; /* Výška řádku pro lepší čitelnost */
+        padding: 10px; /* Odsazení uvnitř textového obsahu */
+    }
+}

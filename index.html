@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Přidání meta tagu pro responzivitu -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="images/logo.svg" type="image/x-icon"> <!-- Přidání obrázku do záložky -->
+
+    <title>Zapadáto</title>
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="world" height="100"> <!-- Cesta relativní k index.html -->
+            </a>
+        </div>
+        <div class="nav">
+            <button class="nav-btn" onclick="location.href='index.html'">ÚVOD</button>
+            <button class="nav-btn" onclick="location.href='Sluzby.html'">SLUŽBY</button>
+            <button class="nav-btn" onclick="location.href='Cenik.html'">CENÍK</button>
+            <button class="nav-btn" onclick="location.href='Kontakt.html'">KONTAKT</button>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="images/tripple-line.svg" alt="Menu" height="30"> <!-- Cesta relativní k index.html -->
+        </div>
+    </div>
+    
+
+    <div id="mobileMenu" class="mobile-menu">
+        <span class="close-menu" onclick="toggleMenu()">&#10005;</span> <!-- Ikona X pro zavření menu -->
+        <a href="index.html">ÚVOD</a>
+        <a href="Sluzby.html">SLUŽBY</a>
+        <a href="Cenik.html">CENÍK</a>
+        <a href="Kontakt.html">KONTAKT</a>
+    </div>
+
+    <div id="scrollToTopBtn" class="scroll-to-top">
+        <img src="images/angle-up.svg" alt="Scroll to top" height="50">
+    </div>
+
+
+
+    <div class="container1">
+        <h2>O mně</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>    
+    </div>
+    <div class="pics">
+        <img src="images/pexels-helloaesthe-27400765.jpg" alt="talir" onclick="openLightbox(this.src)">
+        <img src="images/pexels-helloaesthe-27400766.jpg" alt="boruvky" onclick="openLightbox(this.src)">
+        <img src="images/pexels-seferikalbiye-45418505-16244099.jpg" alt="neco"onclick="openLightbox(this.src)" >
+
+
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&#10005;</span>
+        <img id="lightboxImage" src="" alt="Zvětšený obrázek">
+    </div>
+
+
+
+
+    <div class="container2">
+        <h2>Kraniosakrální osteopatie</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+
+        <h3 style="text-align: center;">Terapie je vhodná pro:</h3>
+        <div class="list">
+            <ul>
+                <li>Chronickými bolestmi zad a krku</li>
+                <li>Migrénami</li>
+                <li>Stresovými a úzkostnými stavy</li>
+                <li>Problémy se spánkem</li>
+                <li>Traumat a pooperační rekonvalescence</li>
+                <li>Poúrazovými obtížemi</li>
+            </ul>
+        </div>
+        
+        <p style="font-weight: bold; text-align: center;">Pokud se chcete dozvědět více o metodě RUŠ, neváhejte mě kontaktovat!</p>
+    </div>
+    <div class="nav" id="sluzby-btn"><button class="nav-btn" onclick="location.href='Sluzby.html'">Více o metodě RUŠ</button></div>
+
+
+
+    <div class="container1">
+        <h2>Certifikát o členství v ČKA</h2>
+        <img src="images/Certifikat-1.png" alt="Certifikát" style="width: 100%; max-width: 500px; display: block; margin: 0 auto; box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1);">
+    </div>
+
+    <div class="footer" style="margin-top: 140px;">
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html"><img src="../WebRus/images/logo.svg" alt="world" height="100"></a></div>
+            <div class="contact">
+                <h3>Kontakt</h3>
+                <p>Email:</p>
+                <p>zuzka.zapadlova@seznam.cz</p>
+                <p>Telefon:</p>
+                <p>+420 776 779 225</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
