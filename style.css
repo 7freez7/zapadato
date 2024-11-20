@@ -47,7 +47,7 @@ h1, h2, h3, .nav-btn {
 
 .mainImage img {
     width: 100%; /* Nastaví šířku obrázku na 100% kontejneru */
-    height: 600px; /* Udržuje poměr stran obrázku */
+    height: 700px; /* Udržuje poměr stran obrázku */
     display: block; /* Odstraní mezery pod obrázkem */
     filter: brightness(70%); /* Snížení jasu na 70% */
 
