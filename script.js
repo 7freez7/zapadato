@@ -32,29 +32,6 @@ function toggleMenu() {
     document.body.classList.toggle("menu-active", menu.classList.contains("active"));
 }
 
-// Function to send email
-function sendEmail(event) {
-    event.preventDefault();
-
-    const recipientEmail = "filipgilar07@gmail.com"; 
-    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipientEmail}&su=Dotaz`;
-
-    window.open(gmailLink, '_blank');
-}
-
-// Save form data to localStorage on input
-document.getElementById("email").addEventListener("input", saveFormData);
-document.getElementById("message").addEventListener("input", saveFormData);
-
-function saveFormData() {
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    // Save data to localStorage and log to console for debugging
-    localStorage.setItem("contactEmail", email);
-    localStorage.setItem("contactMessage", message);
-    console.log("Form data saved:", { email, message });
-}
 
         // Zobrazí lightbox s vybraným obrázkem
         function openLightbox(imageSrc) {
@@ -71,6 +48,7 @@ function saveFormData() {
         document.querySelectorAll('.pics img').forEach(img => {
             img.addEventListener('click', () => openLightbox(img.src));
         });
+
 
 // Funkce pro načítání komponent (navbar, footer)
 function loadComponent(id, file) {
