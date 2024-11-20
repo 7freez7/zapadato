@@ -50,8 +50,6 @@ h1, h2, h3, .nav-btn {
     height: 700px; /* Udržuje poměr stran obrázku */
     display: block; /* Odstraní mezery pod obrázkem */
     filter: brightness(70%); /* Snížení jasu na 70% */
-
-
 }
 
 .logo-common {
@@ -213,8 +211,15 @@ th {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container1, .container2 {
+.container1{
     width: 85%;
+
+}
+
+.container2{
+    width: 60%;
+}
+.container1, .container2 {
     padding: 3%;
     background-color: #fff;
     border-radius: 10px; /* Změna z 2% na 10px pro ostřejší zakulacení */
@@ -233,12 +238,12 @@ th {
     margin-bottom: 2%;
 }
 
-.container2 .list ul {
+.container1 .list ul {
     padding-left: 5%;
     list-style-type: disc;
 }
 
-.container2 .list ul li {
+.container1 .list ul li {
     margin-bottom: 1.5%;
     font-size: 110%;
     max-width: 200%;
@@ -258,14 +263,30 @@ th {
     justify-content: center;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 50%;
     height: 200px;
+    width: 200px;
+    object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
 
 }
 .pics img:hover {
     transform: scale(1.1);
+
+}
+
+.certifikat img {
+    width: 100%; 
+    max-width: 500px; 
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.certifikat img:hover {
+    transform: scale(1.1);
+
 }
 
         /* Lightbox stylování */
