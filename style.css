@@ -43,13 +43,19 @@ h1, h2, h3, .nav-btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.mainImage {
+    overflow: hidden; /* Skryje část obrázku, která přesahuje kontejner */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 
+}
 
 .mainImage img {
     width: 100%; /* Nastaví šířku obrázku na 100% kontejneru */
-    height: 700px; /* Udržuje poměr stran obrázku */
+    height: 600px; /* Nastaví výšku obrázku na 700 pixelů */
     display: block; /* Odstraní mezery pod obrázkem */
     filter: brightness(70%); /* Snížení jasu na 70% */
+    object-fit: cover; /* Zajištění, že obrázek vyplní kontejner bez deformace */
+
 }
 
 .logo-common {
