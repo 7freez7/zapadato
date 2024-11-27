@@ -46,6 +46,7 @@ h1, h2, h3, .nav-btn {
 .mainImage {
     overflow: hidden; /* Skryje část obrázku, která přesahuje kontejner */
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    z-index: 1;
 
 }
 
@@ -396,6 +397,7 @@ iframe {
     opacity: 0;
     visibility: hidden;
     transition: visibility 0s, opacity 0.5s ease;
+    z-index: 1000;
 }
 
 .mobile-menu.active {
@@ -516,27 +518,6 @@ body.menu-active {
         font-size: 14px; /* Zmenšení velikosti písma */
     }
 
-    .form-container {
-        width: 90%; /* Šířka 90% pro menší obrazovky */
-    }
-    
-    .form-container h2 {
-        text-align: center; /* Vycentrování nadpisu */
-    }
-    
-    .form-container label {
-        font-size: 1rem; /* Velikost písma pro štítky */
-        margin-top: 10px; /* Odsazení nad štítky */
-    }
-    
-    .form-container input,
-    .form-container textarea {
-        width: calc(100% - 20px); /* Odsazení z každé strany */
-        padding: 10px; /* Odsazení uvnitř vstupů */
-        margin: 5px 0 15px; /* Odsazení mezi vstupy */
-        border: 1px solid #ccc; /* Světlý okraj */
-        border-radius: 5px; /* Zaoblené okraje */
-    }
     
     /* Zajištění, že obrázky v kontejnerech jsou responzivní */
     .pics img {
