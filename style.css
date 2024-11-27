@@ -43,13 +43,19 @@ h1, h2, h3, .nav-btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.mainImage {
+    overflow: hidden; /* Skryje část obrázku, která přesahuje kontejner */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 
+}
 
 .mainImage img {
     width: 100%; /* Nastaví šířku obrázku na 100% kontejneru */
-    height: 700px; /* Udržuje poměr stran obrázku */
+    height: 600px; /* Nastaví výšku obrázku na 700 pixelů */
     display: block; /* Odstraní mezery pod obrázkem */
     filter: brightness(70%); /* Snížení jasu na 70% */
+    object-fit: cover; /* Zajištění, že obrázek vyplní kontejner bez deformace */
+
 }
 
 .logo-common {
@@ -171,15 +177,9 @@ th, td {
 }
 
 th {
-    background-color: #6623be;
+    background-color: #CA8787;
     color: white;
-    border: 1px solid white;
 
-}
-
-.highlight {
-    background-color: #9f86c0;
-    color: white;
 }
 
 .container {
@@ -538,21 +538,6 @@ body.menu-active {
         border-radius: 5px; /* Zaoblené okraje */
     }
     
-    .form-container button {
-        width: 100%; /* Šířka 100% */
-        padding: 10px; /* Odsazení */
-        background-color: #7a4b8a; /* Barva tlačítka */
-        color: white; /* Barva textu */
-        border: none; /* Odstranění okraje */
-        border-radius: 5px; /* Zaoblené tlačítko */
-        font-size: 1rem; /* Velikost písma */
-        cursor: pointer; /* Ukazatel kurzoru */
-    }
-    
-    .form-container button:hover {
-        background-color: #6c3b7a; /* Tmavší odstín při najetí myší */
-    }
-
     /* Zajištění, že obrázky v kontejnerech jsou responzivní */
     .pics img {
         width: 100%; /* Zajištění, že obrázky se přizpůsobí šířce kontejneru */
