@@ -171,15 +171,9 @@ th, td {
 }
 
 th {
-    background-color: #6623be;
+    background-color: #CA8787;
     color: white;
-    border: 1px solid white;
 
-}
-
-.highlight {
-    background-color: #9f86c0;
-    color: white;
 }
 
 .container {
@@ -538,21 +532,6 @@ body.menu-active {
         border-radius: 5px; /* Zaoblené okraje */
     }
     
-    .form-container button {
-        width: 100%; /* Šířka 100% */
-        padding: 10px; /* Odsazení */
-        background-color: #7a4b8a; /* Barva tlačítka */
-        color: white; /* Barva textu */
-        border: none; /* Odstranění okraje */
-        border-radius: 5px; /* Zaoblené tlačítko */
-        font-size: 1rem; /* Velikost písma */
-        cursor: pointer; /* Ukazatel kurzoru */
-    }
-    
-    .form-container button:hover {
-        background-color: #6c3b7a; /* Tmavší odstín při najetí myší */
-    }
-
     /* Zajištění, že obrázky v kontejnerech jsou responzivní */
     .pics img {
         width: 100%; /* Zajištění, že obrázky se přizpůsobí šířce kontejneru */
