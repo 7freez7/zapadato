@@ -44,18 +44,33 @@ h1, h2, h3, .nav-btn {
 }
 
 .mainImage {
-    overflow: hidden; /* Skryje část obrázku, která přesahuje kontejner */
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     z-index: 1;
+    overflow: hidden; /* Skryje část obrázku, která přesahuje kontejner */
+    height: 300px; /* Nastaví výšku kontejneru na 300 pixelů */
+    position: relative;
 
 }
 
 .mainImage img {
     width: 100%; /* Nastaví šířku obrázku na 100% kontejneru */
-    height: 600px; /* Nastaví výšku obrázku na 700 pixelů */
+    height: auto; /* Umožní udržení poměru stran */
+    min-height: 300px; /* Nastaví minimální výšku obrázku na 300 pixelů */
     display: block; /* Odstraní mezery pod obrázkem */
     filter: brightness(70%); /* Snížení jasu na 70% */
     object-fit: cover; /* Zajištění, že obrázek vyplní kontejner bez deformace */
+    object-position: center; /* Oříznutí obrázku ze středu */
+}
+
+.mainImage h1 {
+    position: absolute; /* Absolutní pozicování */
+    top: 50%; /* Umístí h1 na 50% výšky kontejneru */
+    left: 50%; /* Umístí h1 na 50% šířky kontejneru */
+    transform: translate(-50%, -50%); /* Posune h1 zpět o polovinu jeho vlastní šířky a výšky */
+    color: white; /* Nastaví barvu textu */
+    text-align: center; /* Zarovná text na střed */
+    z-index: 1; /* Zajišťuje, že h1 je nad obrázkem */
+    text-shadow: 2px 2px 4px rgba(104, 104, 104, 0.7); /* Přidání stínu k textu */
 
 }
 
