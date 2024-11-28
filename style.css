@@ -276,17 +276,16 @@ th {
     text-align: center;
 }
 
-.pics img{
+.pics img {
     justify-content: center;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+    border-radius: 50%; /* Udržuje kruhový tvar */
+    height: 200px; /* Nastavte výšku na 200px pro větší obrazovky */
+    width: 200px; /* Nastavte šířku na 200px pro větší obrazovky */
+    object-fit: cover; /* Zajištění, že obrázek vyplní kruh bez deformace */
     cursor: pointer;
     transition: transform 0.2s;
-
 }
 .pics img:hover {
     transform: scale(1.1);
@@ -459,92 +458,94 @@ body.menu-active {
     display: none;
 }
 
+#Certtt {
+    width: 60%;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     * {
         max-width: 100%;
         margin: 0 auto;
     }
-    .nav {
-        display: none; /* Skrytí původní navigace */
+
+    #Certtt {
+        width: 90%;
     }
-    .header {
-        width: 100%;
+
+    .mainImage {
+        height: auto; /* Umožní přizpůsobení výšky obrázku */
     }
 
     h1 {
-        font-size: 350%;
-        text-align: center;
+        font-size: 4em; /* Zmenšení velikosti písma pro mobilní zařízení */
     }
-    .logo {
-        margin: 0 auto;
+
+    .mainImage h1 {
+        font-size: 2.5em; /* Zmenšení velikosti písma nadpisu pro mobilní zařízení */
+        padding: 10px; /* Přidání paddingu pro lepší vzhled */
+    }
+
+    .nav {
+        display: none; /* Skrytí původní navigace */
     }
 
     .menu-icon {
         display: block; /* Zobrazení ikony menu */
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.837);
+    }
+
+    .mobile-menu {
+        display: flex; /* Zobrazení mobilního menu */
     }
 
     .footer {
-        padding: 8%;
-        width: 100%;
+        padding: 8%; /* Zmenšení paddingu pro mobilní zařízení */
     }
 
     .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-    }
-
-    .footer-content .contact {
-        display: flex;
         flex-direction: column; /* Umožní vertikální zobrazení */
+        align-items: center; /* Zarovná obsah na střed */
+        text-align: center; /* Zarovná text na střed */
     }
 
-    .footer-logo {
-        display: none;
+    .pics img {
+        height: 150px; /* Zmenšení výšky pro mobilní zařízení */
+        width: 150px; /* Zmenšení šířky pro mobilní zařízení */
+        margin: 10px; /* Zmenšení okrajů pro mobilní zařízení */
+    }
+
+
+    .container1, .container2 {
+        padding: 3%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1);
+        text-align: left;
+        margin: 3% auto; /* Zarovná horizontálně na střed */
+        max-width: 90%; /* Maximální šířka kontejneru */
+        overflow: hidden; /* Skrytí přetékajícího textu */
+    }
+
+    .container1 h2, .container2 h2 {
+        margin-bottom: 1%;
+        overflow-wrap: break-word; /* Zajištění, že dlouhá slova se zlomí */
     }
     
-    .nav-btn {
-        display: none; /* Odstraněno, pokud se nevyžaduje */
-    }
-
-    .header {
-        padding: 8%; /* Odstraněno, pokud se nevyžaduje */
-    }
-
-    #Cenik {
-        display: block;
-    }
-
-    #TMR {
-        display: none;
-    }
-
-    #TMRus {
-        display: block;
+    .container1 p, .container2 p {
+        font-size: 90%;
+        line-height: 1.6;
+        margin-bottom: 2%;
+        overflow-wrap: normal; /* Zajištění, že dlouhá slova se zlomí */
     }
 
     table {
-        width: 90%;
+        width: 100%; /* Zajištění, že tabulka se přizpůsobí šířce kontejneru */
     }
 
     th, td {
         padding: 8px; /* Zmenšení paddingu pro menší obrazovky */
         font-size: 14px; /* Zmenšení velikosti písma */
-    }
-
-    
-    /* Zajištění, že obrázky v kontejnerech jsou responzivní */
-    .pics img {
-        width: 100%; /* Zajištění, že obrázky se přizpůsobí šířce kontejneru */
-        height: auto; /* U držení poměru stran */
-    }
-
-    /* Zajištění, že text v kontejnerech je čitelný */
-    .text-content {
-        font-size: 1rem; /* Velikost písma pro text */
-        line-height: 1.5; /* Výška řádku pro lepší čitelnost */
-        padding: 10px; /* Odsazení uvnitř textového obsahu */
     }
 }
