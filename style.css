@@ -477,8 +477,8 @@ body.menu-active {
         height: auto; /* Umožní přizpůsobení výšky obrázku */
     }
 
-    h1 {
-        font-size: 4em; /* Zmenšení velikosti písma pro mobilní zařízení */
+    h2 {
+        font-size: 2.8em; /* Zmenšení velikosti písma pro mobilní zařízení */
     }
 
     .mainImage h1 {
@@ -538,14 +538,25 @@ body.menu-active {
         line-height: 1.6;
         margin-bottom: 2%;
         overflow-wrap: normal; /* Zajištění, že dlouhá slova se zlomí */
+        hyphens: auto; /* Umožní automatické dělení slov */
+
     }
 
     table {
-        width: 100%; /* Zajištění, že tabulka se přizpůsobí šířce kontejneru */
+        width: 90%; /* Zajištění, že tabulka se přizpůsobí šířce kontejneru */
     }
 
     th, td {
         padding: 8px; /* Zmenšení paddingu pro menší obrazovky */
         font-size: 14px; /* Zmenšení velikosti písma */
+    }
+
+    h1, h2, h3 {
+        overflow-wrap: break-word; /* Umožní zlomit slova, pokud jsou příliš dlouhá */
+        word-wrap: break-word; /* Starší podpora pro zlom slov */
+        hyphens: auto; /* Umožní automatické dělení slov */
+        text-align: center; /* Pokud chcete, aby byly nadpisy zarovnané na střed */
+        margin: 0; /* Odstranění výchozího okraje */
+        padding: 0; /* Odstranění výchozího paddingu */
     }
 }
