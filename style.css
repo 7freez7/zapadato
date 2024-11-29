@@ -559,4 +559,10 @@ body.menu-active {
         margin: 0; /* Odstranění výchozího okraje */
         padding: 0; /* Odstranění výchozího paddingu */
     }
+
+    .info {
+        width: 90%;
+    }
+
+
 }
