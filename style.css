@@ -284,7 +284,6 @@ th {
 
 .container1 .list ul {
     padding-left: 5%;
-    list-style-type: disc;
 }
 
 .container1 .list ul li {
@@ -292,6 +291,8 @@ th {
     font-size: 110%;
     max-width: 200%;
 }
+
+
 
 .container1 .nav, .container2 .nav {
     display: flex;
@@ -379,8 +380,21 @@ th {
 
 
 .list {
-    text-align: left;
-    display: inline-block;
+
+    padding: 0;
+
+}
+
+.list li {
+    position: relative; /* Umožní absolutní pozicování pseudo-elementu */
+    padding-left: 20px;
+}
+
+.list li::before {
+    content: '-'; /* Obsah, který se zobrazuje před každou položkou */
+    position: absolute; /* Absolutní pozicování */
+    left: 0; /* Umístí pomlčku na začátek */
+    color: black; /* Barva pomlčky */
 }
 
 .info {
