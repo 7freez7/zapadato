@@ -59,12 +59,16 @@ h1, h2, h3, .nav-btn {
     height: auto; /* Umožní udržení poměru stran */
     min-height: 300px; /* Nastaví minimální výšku obrázku na 300 pixelů */
     display: block; /* Odstraní mezery pod obrázkem */
-    filter: brightness(70%); /* Snížení jasu na 70% */
+    filter: brightness(60%); /* Snížení jasu na 70% */
     object-fit: cover; /* Zajištění, že obrázek vyplní kontejner bez deformace */
     object-position: center; /* Oříznutí obrázku ze středu */
 }
 
-.mainImage h1 {
+#logo {
+
+}
+
+.mainImage h1, #logo {
     position: absolute; /* Absolutní pozicování */
     top: 50%; /* Umístí h1 na 50% výšky kontejneru */
     left: 50%; /* Umístí h1 na 50% šířky kontejneru */
