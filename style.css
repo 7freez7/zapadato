@@ -229,11 +229,13 @@ th {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2%;
     margin: 1% auto;
-    max-width: 90%;
+    max-width: 100%;
+    min-height: 300px;
+    
 }
 
 .map-container {
@@ -405,7 +407,10 @@ th {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto; /* Zajistí zarovnání na střed pomocí margin auto */
+    flex: 1;
 }
+
+
 
 .info h2 {
     margin-bottom: 10px;
@@ -618,5 +623,14 @@ body.menu-active {
 
     .info {
         width: 90%;
+    }
+
+    .container {
+        flex-direction: column; /* Změní rozložení na sloupec */
+    }
+
+    .info {
+        width: 90%; /* Zajišťuje, že každá třída .info zabere celou šířku */
+        margin: 5px 0; /* Přidá vertikální mezery mezi kontejnery */
     }
 }
