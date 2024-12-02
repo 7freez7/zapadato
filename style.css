@@ -47,7 +47,7 @@ h1, h2, h3, .nav-btn {
 
 .mainImage {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    z-index: 1;
+    z-index: 2;
     overflow: hidden; /* Skryje část obrázku, která přesahuje kontejner */
     height: 300px; /* Nastaví výšku kontejneru na 300 pixelů */
     position: relative;
