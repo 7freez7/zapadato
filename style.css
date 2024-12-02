@@ -252,7 +252,7 @@ th {
 .container1 p, .container2 p {
     font-size: 110%;
     line-height: 1.6;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .container1 .list ul {
@@ -292,13 +292,21 @@ th {
 
 }
 
+.certifikat {
+    display: flex; /* Umožní obrázkům být vedle sebe */
+    flex-wrap: wrap; /* Umožní přechod na nový řádek, pokud je nedostatek místa */
+    justify-content: center; /* Zarovná obrázky na střed */
+}
+
 .certifikat img {
-    width: 100%; 
-    max-width: 500px; 
+    width: 45%; /* Změňte šířku na 45% pro dva obrázky vedle sebe */
+    max-width: 200px; /* Maximální šířka pro větší obrazovky */
     display: block; 
-    margin: 0 auto; 
+    margin: 10px; /* Přidání mezery mezi obrázky */
     box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    object-fit: contain;
+    border-radius: 20px;
 }
 .certifikat img:hover {
     transform: scale(1.1);
