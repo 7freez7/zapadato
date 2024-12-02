@@ -64,10 +64,6 @@ h1, h2, h3, .nav-btn {
     object-position: center; /* Oříznutí obrázku ze středu */
 }
 
-#logo {
-
-}
-
 .mainImage h1, #logo {
     position: absolute; /* Absolutní pozicování */
     top: 50%; /* Umístí h1 na 50% výšky kontejneru */
