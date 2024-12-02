@@ -83,20 +83,47 @@ h1, h2, h3, .nav-btn {
 
 .footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 5px 20px 5px;
-    background-color: #FFD0D0;
+    justify-content: space-between; /* Rozloží obsah na začátek a konec */
+    align-items: center; /* Vertikálně centrovat obsah */
+    padding: 20px; /* Přidání paddingu pro lepší vzhled */
+    background-color: #FFD0D0; /* Pozadí patičky */
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .footer-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 95%;
-    padding: 0px;
+    width: 100%; /* Umožní, aby se obsah rozprostřel na celou šířku */
+    justify-content: space-between; /* Rozloží obsah mezi logo, rezervační systém a kontakt */
+    align-items: center; /* Vertikální centrování */
 }
+
+.logo {
+    flex: 1; /* Umožní logu zabrat místo vlevo */
+}
+
+
+.reservation {
+    text-align: center; /* Centrovat text v rámci této sekce */
+    flex: 1; /* Umožní rezervačnímu systému zabrat místo uprostřed */
+}
+
+.contact {
+    flex: 1; /* Umožní kontaktu zabrat místo vpravo */
+    text-align: center; /* Zarovnat text vpravo */
+}
+
+.reservation a {
+    background-color: white; /* Pozadí odkazu */
+    border-radius: 20px; /* Zaoblení rohů */
+    padding: 5px 20px; /* Vnitřní okraje pro lepší vzhled */
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    color: black; /* Barva textu */
+}
+
+.reservation a:hover {
+    background-color: #E1ACAC; /* Změna barvy pozadí při najetí myší */
+}
+
 .footer-content .contact p {
     color: black;
 }
@@ -477,6 +504,10 @@ body.menu-active {
         margin: 0 auto;
     }
 
+    .logo {
+        text-align: center;
+    }
+
     #Certtt {
         width: 90%;
     }
@@ -485,9 +516,13 @@ body.menu-active {
         height: auto; /* Umožní přizpůsobení výšky obrázku */
     }
 
-    h2 {
-        font-size: 2.8em; /* Zmenšení velikosti písma pro mobilní zařízení */
-    }
+    h1 {font-size: 40px;}
+
+    h2 {font-size: 30px;}
+
+    h3 {font-size: 20px;}
+
+
 
     .mainImage h1 {
         font-size: 2.5em; /* Zmenšení velikosti písma nadpisu pro mobilní zařízení */
@@ -519,12 +554,20 @@ body.menu-active {
         text-align: center; /* Zarovná text na střed */
     }
 
+    .reservation {
+        padding: 10px;
+    }
+
+    .contact {
+        padding: 10px;
+
+    }
+
     .pics img {
         height: 150px; /* Zmenšení výšky pro mobilní zařízení */
         width: 150px; /* Zmenšení šířky pro mobilní zařízení */
         margin: 10px; /* Zmenšení okrajů pro mobilní zařízení */
     }
-
 
     .container1, .container2 {
         padding: 3%;
@@ -559,18 +602,7 @@ body.menu-active {
         font-size: 14px; /* Zmenšení velikosti písma */
     }
 
-    h1, h2, h3 {
-        overflow-wrap: break-word; /* Umožní zlomit slova, pokud jsou příliš dlouhá */
-        word-wrap: break-word; /* Starší podpora pro zlom slov */
-        hyphens: auto; /* Umožní automatické dělení slov */
-        text-align: center; /* Pokud chcete, aby byly nadpisy zarovnané na střed */
-        margin: 0; /* Odstranění výchozího okraje */
-        padding: 0; /* Odstranění výchozího paddingu */
-    }
-
     .info {
         width: 90%;
     }
-
-
 }
