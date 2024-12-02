@@ -537,7 +537,7 @@ body.menu-active {
         width: 90%;
     }
 
-    .mainImage {
+    .mainImage, #logo {
         height: auto; /* Umožní přizpůsobení výšky obrázku */
     }
 
