@@ -30,7 +30,9 @@ body {
 }
 
 h1, h2, h3, .nav-btn {
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #CA8787;
+
 }
 
 .header {
@@ -192,7 +194,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 35px;
     padding: 10px;
 }
 
@@ -279,7 +281,7 @@ th {
 }
 
 .container1 p, .container2 p {
-    font-size: 110%;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 1%;
 }
@@ -290,7 +292,7 @@ th {
 
 .container1 .list ul li {
     margin-bottom: 1.5%;
-    font-size: 110%;
+    font-size: 16px;
     max-width: 200%;
 }
 
@@ -601,7 +603,10 @@ body.menu-active {
 
     .container1 h2, .container2 h2 {
         margin-bottom: 1%;
+
     }
+
+
     
     .container1 p, .container2 p {
         font-size: 90%;
