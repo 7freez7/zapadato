@@ -54,7 +54,7 @@ h1, h2, h3, .nav-btn {
 
 }
 
-.mainImage img {
+.mainImage #oko {
     width: 100%; /* Nastaví šířku obrázku na 100% kontejneru */
     height: auto; /* Umožní udržení poměru stran */
     min-height: 300px; /* Nastaví minimální výšku obrázku na 300 pixelů */
@@ -64,16 +64,13 @@ h1, h2, h3, .nav-btn {
     object-position: center; /* Oříznutí obrázku ze středu */
 }
 
-.mainImage h1, #logo {
-    position: absolute; /* Absolutní pozicování */
-    top: 50%; /* Umístí h1 na 50% výšky kontejneru */
-    left: 50%; /* Umístí h1 na 50% šířky kontejneru */
-    transform: translate(-50%, -50%); /* Posune h1 zpět o polovinu jeho vlastní šířky a výšky */
-    color: white; /* Nastaví barvu textu */
-    text-align: center; /* Zarovná text na střed */
-    z-index: 1; /* Zajišťuje, že h1 je nad obrázkem */
-    text-shadow: 2px 2px 4px rgba(104, 104, 104, 0.7); /* Přidání stínu k textu */
-
+.mainImage #logo {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    height: 230px; /* Zmenšená výška loga */
+    width: auto; /* Umožní automatickou šířku */
 }
 
 .logo-common {
@@ -454,10 +451,10 @@ iframe {
 }
 
 .mobile-menu {
-    display: none;
+    display: none; /* Skrytí mobilního menu */
     position: fixed;
     top: 0;
-    right: 0;
+    right: 0; /* Umístění na pravou stranu */
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -465,19 +462,27 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0s, opacity 0.5s ease;
+    opacity: 0; /* Počáteční opacity */
+    transform: translateX(100%); /* Počáteční pozice mimo obrazovku */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Přechody pro opacity a transformaci */
     z-index: 1000;
 }
 
-.mobile-menu.active {
-    opacity: 1;
-    visibility: visible;
-    overflow: hidden; /* Zabrání posouvání */
-}
 body.menu-active {
-    overflow: hidden; /* Skrytí posuvníku */
+    overflow: hidden; /* Zamezení posouvání stránky */
+}
+
+.mobile-menu.active {
+    display: flex; /* Zobrazení mobilního menu */
+    opacity: 1; /* Konečná opacity */
+    transform: translateX(0); /* Posun do viditelné oblasti */
+}
+
+
+.mobile-menu.inactive {
+    opacity: 0; /* Konečná opacity při zavření */
+    transform: translateX(100%); /* Posun zpět mimo obrazovku */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Přechody pro opacity a transformaci */
 }
 
 .mobile-menu a {
@@ -489,7 +494,7 @@ body.menu-active {
 }
 
 .mobile-menu a:hover {
-    color: #7b2ae6;
+    color: #CA8787;
 }
 
 .close-menu {
@@ -533,7 +538,7 @@ body.menu-active {
         width: 90%;
     }
 
-    .mainImage, #logo {
+    .mainImage{
         height: auto; /* Umožní přizpůsobení výšky obrázku */
     }
 

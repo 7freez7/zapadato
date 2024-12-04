@@ -28,9 +28,26 @@ function scrollToTop(duration) {
 // Toggle menu
 function toggleMenu() {
     const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("active");
-    document.body.classList.toggle("menu-active", menu.classList.contains("active"));
+    if (menu.classList.contains("active")) {
+        // Pokud je menu aktivní, přidej třídu pro zavření
+        menu.classList.add("inactive"); // Přidání třídy pro zavření
+        document.body.classList.remove("menu-active"); // Obnovení posouvání stránky
+
+        // Počkejte, než se animace dokončí, a poté skryjte menu
+        setTimeout(() => {
+            menu.classList.remove("active"); // Odebrání třídy pro skrytí menu
+            menu.classList.remove("inactive"); // Odebrání třídy pro zavření
+        }, 500); // Čas odpovídající délce animace
+    } else {
+        // Pokud menu není aktivní, přidej třídu pro otevření
+        menu.classList.add("active"); // Přidání třídy pro zobrazení menu
+        document.body.classList.add("menu-active"); // Zamezení posouvání stránky
+    }
 }
+
+// Přidání posluchače události na tlačítko pro otevření/zavření menu
+document.getElementById("menuButton").addEventListener("click", toggleMenu);
+
 
 
         // Zobrazí lightbox s vybraným obrázkem
