@@ -22,7 +22,8 @@
     padding: 0;
     margin: 0;
     color: black;
-    font-size: 20px;
+    white-space: normal; /* Umožní textu přecházet na nový řádek */
+    word-break: normal;
 }
 
 body {
@@ -161,7 +162,7 @@ h1, h2, h3, .nav-btn {
 
 .nav-btn:hover {
     background-color: #CA8787;
-    transform: scale(1.3);
+    transform: scale(1.1);
     box-shadow: 0 4px 6px #dac1cf;
 }
 
@@ -196,8 +197,9 @@ h2 {
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
+    padding: 10px;
 }
 
 table {
@@ -273,27 +275,29 @@ th {
     margin: 3% auto; /* Zarovná horizontálně na střed */
 }
 
-.container1 h2, .container2 h2 {
+h2 {
     margin-bottom: 1%;
 }
 
 .container1 p, .container2 p {
     font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 1%;
+    margin-bottom: 1em;
 }
 
-.container1 .list ul {
-    padding-left: 5%;
-}
-
-.container1 .list ul li {
-    margin-bottom: 1.5%;
+.container1 .list {
     font-size: 16px;
-    max-width: 200%;
+}
+.list ul {
+    list-style-type: none; /* Odstraní výchozí odrážky */
+    padding-left: 0; /* Odstraní standardní odsazení */
 }
 
-
+.list ul li::before {
+    content: "-"; /* Přidá pomlčku před každou položku */
+    margin-right: 10px; /* Přidá mezeru mezi pomlčkou a textem */
+    color: black; /* Nastaví barvu pomlčky, případně změňte dle potřeby */
+    font-weight: bold; /* Volitelné: zvýrazní pomlčku */
+}
 
 .container1 .nav, .container2 .nav {
     display: flex;
@@ -378,25 +382,6 @@ th {
             color: #ff6f61;
         }
 
-
-
-.list {
-
-    padding: 0;
-
-}
-
-.list li {
-    position: relative; /* Umožní absolutní pozicování pseudo-elementu */
-    padding-left: 20px;
-}
-
-.list li::before {
-    content: '-'; /* Obsah, který se zobrazuje před každou položkou */
-    position: absolute; /* Absolutní pozicování */
-    left: 0; /* Umístí pomlčku na začátek */
-    color: black; /* Barva pomlčky */
-}
 
 .info {
     width: 100%; /* Nastaví šířku kontejnerů na 100% šířky rodiče */
@@ -508,7 +493,7 @@ body.menu-active {
 }
 
 .close-menu:hover {
-    color: #7b2ae6;
+    color: #CA8787;
 }
 
 #Cenik {
@@ -617,8 +602,6 @@ body.menu-active {
         font-size: 90%;
         line-height: 1.6;
         margin-bottom: 2%;
-        overflow-wrap: normal; /* Zajištění, že dlouhá slova se zlomí */
-        hyphens: auto; /* Umožní automatické dělení slov */
 
     }
 
