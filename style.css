@@ -85,7 +85,6 @@ h1, h2, h3, .nav-btn {
     align-items: center;
 }
 
-
 .footer {
     display: flex;
     justify-content: space-between; /* Rozloží obsah na začátek a konec */
@@ -105,7 +104,6 @@ h1, h2, h3, .nav-btn {
 .logo {
     flex: 1; /* Umožní logu zabrat místo vlevo */
 }
-
 
 .reservation {
     text-align: center; /* Centrovat text v rámci této sekce */
@@ -291,6 +289,7 @@ h2 {
 .container1 .list {
     font-size: 16px;
 }
+
 .list ul {
     list-style-type: none; /* Odstraní výchozí odrážky */
     padding-left: 0; /* Odstraní standardní odsazení */
@@ -350,42 +349,41 @@ h2 {
 
 }
 
-        /* Lightbox stylování */
-        .lightbox {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
+    /* Lightbox stylování */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
 
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 10px;
-        }
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
 
-        .close-lightbox {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 2rem;
-            color: white;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 50%;
-            transition: color 0.3s;
-        }
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: color 0.3s;
+}
 
-        .close-lightbox:hover {
-            color: #ff6f61;
-        }
-
+.close-lightbox:hover {
+    color: #ff6f61;
+}
 
 .info {
     width: 100%; /* Nastaví šířku kontejnerů na 100% šířky rodiče */
@@ -397,8 +395,6 @@ h2 {
     margin: 20px auto; /* Zajistí zarovnání na střed pomocí margin auto */
     flex: 1;
 }
-
-
 
 .info h2 {
     margin-bottom: 10px;
@@ -425,7 +421,6 @@ iframe {
     margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .menu-icon {
     display: none;
@@ -466,7 +461,6 @@ body.menu-active {
     opacity: 1; /* Konečná opacity */
     transform: translateX(0); /* Posun do viditelné oblasti */
 }
-
 
 .mobile-menu.inactive {
     opacity: 0; /* Konečná opacity při zavření */
@@ -537,8 +531,6 @@ body.menu-active {
 
     h3 {font-size: 20px;}
 
-
-
     .mainImage h1 {
         font-size: 2.5em; /* Zmenšení velikosti písma nadpisu pro mobilní zařízení */
         padding: 10px; /* Přidání paddingu pro lepší vzhled */
@@ -600,8 +592,6 @@ body.menu-active {
 
     }
 
-
-    
     .container1 p, .container2 p {
         font-size: 90%;
         line-height: 1.6;
