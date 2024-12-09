@@ -46,7 +46,7 @@ h1, h2, h3, .nav-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:5px;
+    padding: 10px;
     background-color: #FFD0D0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -90,7 +90,7 @@ h1, h2, h3, .nav-btn {
     display: flex;
     justify-content: space-between; /* Rozloží obsah na začátek a konec */
     align-items: center; /* Vertikálně centrovat obsah */
-    padding: 20px; /* Přidání paddingu pro lepší vzhled */
+    padding: 10px; /* Přidání paddingu pro lepší vzhled */
     background-color: #FFD0D0; /* Pozadí patičky */
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
 }
