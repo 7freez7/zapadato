@@ -32,7 +32,7 @@
 }
 
 body {
-    background-color: #A87676;
+    background-color: #cfb1b1;
 }
 
 h1, h2, h3, .nav-btn {
@@ -51,23 +51,39 @@ h1, h2, h3, .nav-btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+#Rezervace {
+    padding-right: 2%;
+    display: block;
+    margin: 0.3%;
+}
+
+#Rezervace a {
+    text-decoration: none; 
+    text-align: center;
+    color: white;
+}
+
 .mainImage {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    z-index: 2;
-    overflow: hidden; /* Skryje část obrázku, která přesahuje kontejner */
-    height: 300px; /* Nastaví výšku kontejneru na 300 pixelů */
+    overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px; /* Nastaví výšku kontejneru na 300 pixelů */
+    text-align: center;
 
 }
 
 .mainImage #oko {
     width: 100%; /* Nastaví šířku obrázku na 100% kontejneru */
-    height: auto; /* Umožní udržení poměru stran */
+    height: 450px;
     min-height: 300px; /* Nastaví minimální výšku obrázku na 300 pixelů */
     display: block; /* Odstraní mezery pod obrázkem */
-    filter: brightness(60%); /* Snížení jasu na 70% */
+    filter: brightness(50%); /* Snížení jasu na 70% */
     object-fit: cover; /* Zajištění, že obrázek vyplní kontejner bez deformace */
     object-position: center; /* Oříznutí obrázku ze středu */
+    z-index: 1;
 }
 
 .mainImage #logo {
@@ -77,6 +93,16 @@ h1, h2, h3, .nav-btn {
     transform: translate(-50%, -50%); 
     height: 230px; /* Zmenšená výška loga */
     width: auto; /* Umožní automatickou šířku */
+}
+
+.mainImage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white; /* Ujistěte se, že barva textu je viditelná */
+    z-index: 2;
 }
 
 .logo-common {
@@ -394,6 +420,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto; /* Zajistí zarovnání na střed pomocí margin auto */
     flex: 1;
+    min-height: 200px;
 }
 
 .info h2 {
@@ -521,8 +548,12 @@ body.menu-active {
         width: 90%;
     }
 
+    #Rezervace {
+        display: none;
+    }
+
     .mainImage{
-        height: auto; /* Umožní přizpůsobení výšky obrázku */
+        
     }
 
     h1 {font-size: 40px;}
@@ -532,9 +563,9 @@ body.menu-active {
     h3 {font-size: 20px;}
 
     .mainImage h1 {
-        font-size: 2.5em; /* Zmenšení velikosti písma nadpisu pro mobilní zařízení */
+        font-size: 2em; /* Zmenšení velikosti písma nadpisu pro mobilní zařízení */
         padding: 10px; /* Přidání paddingu pro lepší vzhled */
-        overflow-wrap: normal;
+        width: 100%;
     }
 
     .nav {
@@ -608,16 +639,14 @@ body.menu-active {
         font-size: 14px; /* Zmenšení velikosti písma */
     }
 
-    .info {
-        width: 90%;
-    }
+
 
     .container {
         flex-direction: column; /* Změní rozložení na sloupec */
     }
 
     .info {
-        width: 90%; /* Zajišťuje, že každá třída .info zabere celou šířku */
+        width: 85%; /* Zajišťuje, že každá třída .info zabere celou šířku */
         margin: 5px 0; /* Přidá vertikální mezery mezi kontejnery */
     }
 }
