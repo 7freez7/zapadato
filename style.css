@@ -15,7 +15,8 @@
 
 
 * {
-    font-family: 'Poppins', sans-serif; 
+    /*font-family: 'Poppins', sans-serif; */
+    font-family: Nunito;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -36,7 +37,7 @@ body {
 }
 
 h1, h2, h3, .nav-btn {
-    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
     color: #CA8787;
 
 }
