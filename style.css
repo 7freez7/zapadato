@@ -522,6 +522,17 @@ body.menu-active {
     color: #CA8787;
 }
 
+.hoverTerapie {
+    font-weight: bold; 
+    text-decoration: none;
+
+}
+
+.hoverTerapie:hover {
+    color: #CA8787; /* Změna barvy textu při najetí myší */
+    text-decoration: underline; /* Podtržení textu při najetí myší */
+}
+
 #Cenik {
     display: none;
 }
@@ -551,10 +562,6 @@ body.menu-active {
 
     #Rezervace {
         display: none;
-    }
-
-    .mainImage{
-        
     }
 
     h1 {font-size: 40px;}

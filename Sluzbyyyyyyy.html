@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Přidání meta tagu pro responzivitu -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="images/logo.svg" type="image/x-icon"> <!-- Přidání obrázku do záložky -->
+
+    <title>Služby</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="world" height="100"> <!-- Cesta relativní k index.html -->
+            </a>
+        </div>
+        <div class="nav">
+            <button class="nav-btn" onclick="location.href='index.html'">Úvod</button>
+            <!-- <button class="nav-btn" onclick="location.href='Sluzby.html'">Služby</button> -->
+            <button class="nav-btn" onclick="location.href='Cenik.html'">Ceník</button>
+            <button class="nav-btn" onclick="location.href='Profilova.html'">Profil</button>
+            <button class="nav-btn" onclick="location.href='Kontakt.html'">Kontakt</button>
+
+
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="images/tripple-line.svg" alt="Menu" height="30"> <!-- Cesta relativní k index.html -->
+        </div>
+
+        <a href="https://booqme.cz/cs/rezervace/kraniosakralni-osteopatie" style="text-decoration: underline; text-align: center;">Rezervovat <br> schůzku</a>
+        
+    </div>
+    
+    <div id="mobileMenu" class="mobile-menu">
+        <span class="close-menu" onclick="toggleMenu()">&#10005;</span> <!-- Ikona X pro zavření menu -->
+        <a href="index.html">Úvod</a>
+        <a href="Cenik.html">Ceník</a>
+        <a href="Profilova.html">Profil</a>
+        <a href="Kontakt.html">Kontakt</a>
+
+        <a href="https://booqme.cz/cs/rezervace/kraniosakralni-osteopatie" style="text-decoration: underline;">Rezervovat schůzku</a>
+    </div>
+
+        <div id="scrollToTopBtn" class="scroll-to-top">
+            <img src="images/angle-up.svg" alt="Scroll to top" height="50">
+        </div>
+
+        <div class="container2">
+            <h2>Kraniosakrální terapie</h2>
+            <p>Tato jemná léčebná metoda se zaměřuje na manipulaci s kostmi lebky a křížovou kostí.</p>
+            <h3 style="text-align: center;">Terapie je vhodná pro:</h3>
+            <div class="list">
+                <ul>
+                    <li>Chronickými bolestmi zad a krku</li>
+                    <li>Migrénami</li>
+                    <li>Stresovými a úzkostnými stavy</li>
+                    <li>Problémy se spánkem</li>
+                    <li>Traumat a pooperační rekonvalescence</li>
+                    <li>Poúrazovými obtížemi</li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="container1">
+        <h2>Metoda RUŠ</h2>
+        <p>Objevte sílu vlastní mysli s metodou RUŠ. Tato unikátní technika vám pomůže lépe porozumět sobě a zbavit se vnitřních překážek.</p>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="world" height="100"></a>
+            </div>
+            <div class="reservation">
+                <h3>Rezervovat schůzku</h3>
+                <p>
+                    <a href="https://booqme.cz/cs/rezervace/kraniosakralni-osteopatie" target="_blank">booqme.cz</a>
+                </p>
+            </div>
+            <div class="contact">
+                <h3>Kontakt</h3>
+                <p>Email:</p>
+                <p><a href="mailto:zapadato@seznam.cz">zapadato@seznam.cz</a></p>
+                <p>Telefon:</p>
+                <p>+420 776 779 225</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
