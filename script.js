@@ -96,4 +96,11 @@ fetch('components/navbar.html')
     .then(data => console.log(data))
     .catch(error => console.error('Chyba při načítání navbaru:', error));
 
-
+// animace textu v mainImage
+window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+            const heading = document.getElementById("mainHeading");
+            heading.classList.add("show");
+        }, 1000); // Zpoždění v milisekundách (1000 ms = 1 sekunda)
+    });
+// opravit animaci textu v mainImage

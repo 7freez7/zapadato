@@ -71,14 +71,14 @@ h1, h2, h3, .nav-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px; /* Nastaví výšku kontejneru na 300 pixelů */
+    height: 630px; /* Nastaví výšku kontejneru na 300 pixelů */
     text-align: center;
 
 }
 
 .mainImage #oko {
     width: 100%; /* Nastaví šířku obrázku na 100% kontejneru */
-    height: 450px;
+    height: 630px;
     min-height: 300px; /* Nastaví minimální výšku obrázku na 300 pixelů */
     display: block; /* Odstraní mezery pod obrázkem */
     filter: brightness(50%); /* Snížení jasu na 70% */
@@ -289,11 +289,11 @@ th {
 }
 
 .container1{
-    width: 90%;
+    width: 85%;
 }
 
 .container2{
-    width: 90%;
+    width: 85%;
 }
 .container1, .container2 {
     padding: 3%;
@@ -309,8 +309,10 @@ h2 {
 }
 
 .container1 p, .container2 p {
+    padding: 0 8em 0 8em;
     font-size: 16px;
     margin-bottom: 1em;
+    margin: 5px auto; /* Zarovná horizontálně na střed */
 }
 
 .container1 .list {
@@ -319,7 +321,7 @@ h2 {
 
 .list ul {
     list-style-type: none; /* Odstraní výchozí odrážky */
-    padding-left: 0; /* Odstraní standardní odsazení */
+    padding-left: 10%; /* Odstraní standardní odsazení */
 }
 
 .list ul li::before {
@@ -545,6 +547,24 @@ body.menu-active {
     width: 60%;
 }
 
+#adresa {
+    text-align: center;
+}
+#addButton {
+    margin-left: 6em;
+}
+
+/*#mainHeading {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+#mainHeading.show {
+    opacity: 1;
+    transform: translateY(0);
+}*/
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     * {
@@ -564,6 +584,11 @@ body.menu-active {
         display: none;
     }
 
+    #addButton {
+        margin: 0 auto;
+        
+    }
+
     h1 {font-size: 40px;}
 
     h2 {font-size: 30px;}
@@ -574,6 +599,9 @@ body.menu-active {
         font-size: 2em; /* Zmenšení velikosti písma nadpisu pro mobilní zařízení */
         padding: 10px; /* Přidání paddingu pro lepší vzhled */
         width: 100%;
+    }
+
+    .mainImage {
     }
 
     .nav {
@@ -632,11 +660,18 @@ body.menu-active {
     }
 
     .container1 p, .container2 p {
-        font-size: 90%;
+        font-size: 16px;
         line-height: 1.6;
         margin-bottom: 2%;
+        width: 90%;
+        padding: 0 0 0 0;
 
     }
+
+    .container1 .list, .container2 .list {
+        font-size: 16px;
+    }
+
 
     table {
         width: 90%; /* Zajištění, že tabulka se přizpůsobí šířce kontejneru */
